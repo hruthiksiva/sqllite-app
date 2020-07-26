@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 if(deletedrows>0)
                     Toast.makeText(MainActivity.this,"Data Deleted",Toast.LENGTH_LONG).show();
                 else
-                    Toast.makeText(MainActivity.this,"Data Delete Failed",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,"Data Delete Failed ",Toast.LENGTH_LONG).show();
             }
         }
     );
