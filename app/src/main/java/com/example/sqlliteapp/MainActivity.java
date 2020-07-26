@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         idbox=(EditText)findViewById(R.id.idbox);
         AddData();
         viewAll();
+        UpdateData();
         DeleteData();
     }
     public void DeleteData()
@@ -66,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         Boolean isInserted = myDB.insertData(namebox.getText().toString(),surnamebox.getText().toString(),marksbox.getText().toString());
-                        if(isInserted=true)
+                        if(isInserted == true)
                             Toast.makeText(MainActivity.this,"Data Inserted",Toast.LENGTH_LONG).show();
                         else
                             Toast.makeText(MainActivity.this,"Data Insert Failed",Toast.LENGTH_LONG).show();
